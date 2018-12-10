@@ -1,4 +1,37 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP:300,400,700|Roboto+Mono:500&subset=japanese');
+
+/*
+font-family: 'Noto Sans JP', sans-serif;
+font-family: 'Roboto Mono', monospace;
+*/
+body {
+    background-color: rgb(240,240,240);
+}
 .container {
-  width: 1000px;
-  margin: auto;
+    width: 1000px;
+    margin: auto;
+    border: 1px solid red;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+
+.row ul {
+    border: 1px solid green;
+    list-style-type: none;
+    padding-left: 0px;
+}
+
+.row li {
+    background-color: white;
+    margin: 20px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 3px gray;
+
+    border: 1px solid blue;
+}
+
+.row li a {
+    text-decoration: none;
+    color: black;
 }
