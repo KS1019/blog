@@ -5,30 +5,54 @@ font-family: 'Noto Sans JP', sans-serif;
 font-family: 'Roboto Mono', monospace;
 */
 body {
-    background-color: rgb(240,240,240);
+    background-color: white;
+}
+body p {
+    margin: 10px 0px;
+    line-height: 30px;
+}
+body h2, body h3, body h4, body h5, body h6 {
+    margin: 10px 0px;
 }
 .container {
-    width: 1000px;
+    width: 900px;
     margin: auto;
-    border: 1px solid red;
+    background-color: white;
+    border: 1px solid white;
     font-family: 'Noto Sans JP', sans-serif;
+}
+
+.container header a {
+    text-decoration: none;
+    color: black;
+}
+
+.container header:first-child {
+    text-align: center;
+}
+
+.container footer p {
+    text-align: center;
 }
 
 
 .row ul {
-    border: 1px solid green;
+    /* border: 1px solid green; */
     list-style-type: none;
     padding-left: 0px;
+    margin: 0;
 }
 
 .row li {
     background-color: white;
     margin: 20px;
     padding: 10px 20px;
-    border-radius: 5px;
-    box-shadow: 2px 2px 3px gray;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    /* border-radius: 5px; */
+    /* box-shadow: 2px 2px 3px gray; */
 
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
 }
 
 .row li a {
