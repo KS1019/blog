@@ -1,0 +1,24 @@
+baseURL = 'https://ks1019.github.io/blog'
+languageCode = 'jp-ja'
+title = 'ストーのブログ'
+theme = 'anubis'
+enableRobotsTXT = true
+
+[params]
+dateFormat = "2006-01-02"
+paginationSinglePost = true
+style = "auto-without-switcher"
+disableSummary = true
+
+[[params.social]]
+  id = "github"
+  name = "ks1019"
+[[params.social]]
+  id = "twitter"
+  name = "kotarong1"
+
+[markup.goldmark.renderer]
+unsafe = true
+
+[permalinks]
+posts = "/:year/:month/:day/:title/"
