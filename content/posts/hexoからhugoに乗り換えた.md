@@ -1,5 +1,5 @@
 ---
-title: "Hexoからhugoに乗り換えた"
+title: "HexoからHugoに乗り換えた"
 date: 2021-12-12T21:56:15-08:00
 ---
 
