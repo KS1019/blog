@@ -22,3 +22,6 @@ unsafe = true
 
 [permalinks]
 posts = "/:year/:month/:day/:title/"
+
+[frontmatter]
+  lastmod = ['lastmod', ':fileModTime', ':default']
