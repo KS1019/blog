@@ -1,5 +1,5 @@
 ---
-title: "Zinitを導入した"
+title: "zinitを導入した"
 date: 2021-12-14T19:03:50-08:00
 ---
 
@@ -9,6 +9,7 @@ macOSでのデフォルトのシェルがzshになって久しいですが、そ
 zsh用のプラグインマネージャーであり、zshの高速化ができるらしいという話を聞いたので試してみることにしました。自分は主に
 - https://zenn.dev/xeres/articles/2021-05-05-understanding-zinit-syntax
 - https://watiko.net/2021/12/05/renew-zshrc/
+
 の記事とGitHubの[README](https://github.com/zdharma-continuum/zinit/blob/main/README.md)をみながら進めました。
 
 # 計測
