@@ -5,6 +5,7 @@
     {{ if .Page }}
         {{ template "_internal/opengraph.html" . }}
         {{ template "_internal/twitter_cards.html" . }}
+        <title>{{ .Page.Title }}</title>
     {{ else }}
         <title>{{ .Permalink }}</title>
     {{ end }}
