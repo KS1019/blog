@@ -3,6 +3,7 @@ languageCode = 'jp-ja'
 title = 'ストーのブログ'
 theme = 'anubis'
 enableRobotsTXT = true
+googleAnalytics = "G-DNLGK3TWCX"
 
 [params]
 dateFormat = "2006-01-02"
@@ -25,3 +26,12 @@ posts = "/:year/:month/:day/:title/"
 
 [frontmatter]
   lastmod = ['lastmod', ':fileModTime', ':default']
+
+[privacy]
+  [privacy.googleAnalytics]
+    anonymizeIP = true
+    respectDoNotTrack = true
+  [privacy.twitter]
+    enableDNT = true
+  [privacy.youtube]
+    privacyEnhanced = true
