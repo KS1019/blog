@@ -28,7 +28,7 @@ date: 2021-12-21T22:56:24-08:00
 
 </html>
 ```
-上記のHTMLを`layouts/`以下に`alias.html`として保存することでエイリアスのURLをポストした際もメタデータをうまく伝えてくれます。https://cards-dev.twitter.com/validator でしっかりメタデータが渡せているか確認できます。
+上記のHTMLを`layouts/`以下に`alias.html`として保存することでエイリアスのURLをポストした際もメタデータをうまく伝えてくれます。[Card Validator | Twitter Developers](https://cards-dev.twitter.com/validator) でしっかりメタデータが渡せているか確認できます。
 
 # 参考
 - https://gohugo.io/content-management/urls/#customize
