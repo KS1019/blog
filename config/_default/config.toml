@@ -16,6 +16,9 @@ disableSummary = true
 [[params.social]]
   id = "twitter"
   name = "kotarong1"
+[[params.social]]
+  id = "linkedin"
+  name = "kotarosuto"
 
 [markup.goldmark.renderer]
 unsafe = true
