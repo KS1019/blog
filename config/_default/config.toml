@@ -3,7 +3,6 @@ title = 'ストーのブログ'
 theme = 'anubis'
 enableRobotsTXT = true
 googleAnalytics = "G-DNLGK3TWCX"
-relativeURLs = true
 
 [params]
 dateFormat = "2006-01-02"
