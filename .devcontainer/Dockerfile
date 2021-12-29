@@ -22,4 +22,4 @@ FROM mcr.microsoft.com/vscode/devcontainers/base
 COPY --from=0 /usr/bin/hugo /usr/bin
 EXPOSE 1313
 
-RUN git submodule update --init
+CMD git submodule update --init
