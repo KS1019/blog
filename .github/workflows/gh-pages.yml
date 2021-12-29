@@ -2,9 +2,11 @@ name: Publish to GitHub Pages with Hugo
 
 on:
   push:
+    paths-ignore:
+      - '.vscode/'
+      - '.devcontainer/'
     branches:
       - main  # Set a branch to deploy
-  pull_request:
 
 jobs:
   deploy:
