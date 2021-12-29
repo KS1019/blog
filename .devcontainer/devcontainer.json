@@ -1,3 +1,4 @@
+// Referenced from https://github.com/AarynSmith/vscode-dev-container-hugo
 {
 	"name": "Hugo",
 	"build": {
