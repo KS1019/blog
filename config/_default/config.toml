@@ -3,6 +3,7 @@ title = 'ストーのブログ'
 theme = 'anubis'
 enableRobotsTXT = true
 googleAnalytics = "G-DNLGK3TWCX"
+defaultContentLanguage = 'ja'
 
 [params]
 dateFormat = "2006-01-02"
@@ -37,3 +38,11 @@ posts = "/:year/:month/:day/:title/"
     enableDNT = true
   [privacy.youtube]
     privacyEnhanced = true
+
+[languages]
+  [languages.ja]
+    languageCode = 'ja'
+  [languages.en]
+    languageCode = 'en'
+    title = 'My Blog'
+    weight = 2
