@@ -46,3 +46,20 @@ posts = "/:year/:month/:day/:title/"
     languageCode = 'en'
     title = 'My Blog'
     weight = 2
+
+[related]
+  includeNewer = true
+  threshold = 80
+  toLower = false
+
+  [[related.indices]]
+    name = "tags"
+    weight = 100
+
+  [[related.indices]]
+    name = "keywords"
+    weight = 80
+  
+  [[related.indices]]
+    name = "date"
+    weight = 40
