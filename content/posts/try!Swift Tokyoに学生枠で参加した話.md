@@ -3,6 +3,8 @@ title: "try!Swift Tokyoに学生枠で参加した話"
 date: 2019-04-14
 aliases: 
     - /2019/04/14/trySwiftConf/
+tags:
+    - swift
 ---
 何周遅れかわかりませんが自分の記録も兼ねて残して置こうと思います。
 
