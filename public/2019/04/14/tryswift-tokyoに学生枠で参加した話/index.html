@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+
+
+<html lang="ja" data-theme="">
+<head>
+    
+        
+<meta charset="utf-8">
+<meta name="HandheldFriendly" content="True">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="referrer" content="no-referrer-when-downgrade">
+
+<title>try!Swift Tokyoに学生枠で参加した話 - ストーのブログ</title>
+
+<meta name="description" content="何周遅れかわかりませんが自分の記録も兼ねて残して置こうと思います。
+今回、私はtry!Swift Tokyoに学生枠を利用して参加させてもらいました。$350の参加費が$50になるので、学生の自分にとってはかなり助かりました！
+公式Flickerも公開されたのでそれを見つつ、自分の記憶に残った発表をメモしていきたいと思います。
+全ての発表が発表が素晴らしかったんですが、その中でも自分の興味のある分野のものなど５つを選んで軽くまとめてみました。
+native macOS application、またはAppKitの世界 こちらの発表はmacOSアプリケーションについてでした。自分はSwiftを割と長い期間使ってますが、全くといっていいほどmacOSアプリケーションについては知識がなかったので以前から楽しみにしていました。最終的にアプリケーションデザインに関する自分が知らなかった事を色々しれてすごくよかったです。macOSが題材でしたが、iOSにも通じるものも多くありすごく勉強になりました。あとはスライドのデザインがとても綺麗でした。
+ARKitのアプリを作ろう こちらはARKitについてのとても実践的な発表でした。発表をされていたNamrataさんはARKitについての本も執筆されたそうです。自分は常にARKitで何かしたいと思っていたのでとても参考になりました。
+Swiftでソーシャルネットワークをつくろう こちらの発表はServer Side Swiftに関する発表でした。前半はSSSの現状に関する発表でした。様々な開発の状況や、SSSを利用してるプロダクトや企業の紹介などでした。後半はSSSを利用してSNSを作るというデモの発表でした。こちらは発表者の方が執筆されたServer Side Swiftについての本の中のデモでもあるそうです。
+賢者のString こちらはSwiftのStringに関する発表でした。Appleに勤めている方が発表されていた事もあっても注目度が高かったように思います。発表はString型の仕組みに関するもので正直ちゃんと理解できているわけではないのですが、プログラミング言語としてのSwiftをもっと深く学びたいと思わせてくれる発表だったと思います。また個人的にスピーカーの方と直接はなすことができたのが、なかなかできる事ではないと思うので、とてもよかったと思います。
+文字起こし 次へつなごう— Extending a hand to the next generation of Apple developers コーディングを学ぶには絶好のタイミング！技術は日進月歩、進化を遂げています。Apple Platformでの開発はSwiftやSwift playgroundにおける進歩によって、より簡単に取り組めるようになりました。しかし、この業界では、ソフトウェアエンジニアになろうとしている人と、エンジニアリングの役割を果たそうとしているテック企業の採用要求にはまだギャップが存在します。このトークでは、ソフトウェアエンジニアの人口統計からよく見落とされがちなポイントに焦点を当てます。これからソフトウェアエンジニアになろうとしている人々にどのように手を差し伸べられるのかを議論し、私たちソフトウェアエンジニアがApple開発者コミュニティをどのように成長させられるのかについてお話しします。ソフトウェアエンジニアではない人が壁を乗り越えることの難しさや、SwiftとこのApple開発者コミュニティが提供できるものとは何なのかについてもお話します。引用元
+こちらの発表はテック業界における様々なギャップについてでした。プログラミングを学ぶものとして、この発表を聞いていて、いろいろ思う事がありました。とりあえずこの業界がよりダイバーシティのあるものになると良いなと思います。
+文字起こし 感想 初めてのカンファレンス参加でしたがとてもいい経験になりました。機会があればまた参加したいです。東京以外でもやっているので、いつかは挑戦してみたいです。
+参考資料 try! Swift Tokyo 2019 資料まとめ ">
+
+
+
+
+
+<link rel="icon" type="image/x-icon" href="https://ks1019.github.io/blog/favicon.ico">
+<link rel="apple-touch-icon-precomposed" href="https://ks1019.github.io/blog/favicon.png">
+
+
+<style>
+  body {
+    visibility: hidden;
+    opacity: 0;
+  }
+</style>
+
+<noscript>
+  <style>
+    body {
+      visibility: visible;
+      opacity: 1;
+    }
+  </style>
+</noscript>
+
+
+
+    
+
+
+
+
+
+    
+    
+        
+    
+    
+
+    
+        <link rel="stylesheet" href="https://ks1019.github.io/blog/css/style.min.82e1632505b3c2656f87b929f00e503634513649b276db300374039f6392cca8.css" integrity="sha256-guFjJQWzwmVvh7kp8A5QNjRRNkmydtswA3QDn2OSzKg=">
+    
+
+
+
+
+
+    
+
+    
+
+
+
+
+
+    
+    
+        
+    
+    
+
+    
+        <script src="https://ks1019.github.io/blog/js/script.min.74bf1a3fcf1af396efa4acf3e660e876b61a2153ab9cbe1893ac24ea6d4f94ee.js" type="text/javascript" charset="utf-8" integrity="sha256-dL8aP88a85bvpKzz5mDodrYaIVOrnL4Yk6wk6m1PlO4="></script>
+    
+
+
+
+
+
+
+
+<meta property="og:title" content="try!Swift Tokyoに学生枠で参加した話" />
+<meta property="og:description" content="何周遅れかわかりませんが自分の記録も兼ねて残して置こうと思います。
+今回、私はtry!Swift Tokyoに学生枠を利用して参加させてもらいました。$350の参加費が$50になるので、学生の自分にとってはかなり助かりました！
+公式Flickerも公開されたのでそれを見つつ、自分の記憶に残った発表をメモしていきたいと思います。
+全ての発表が発表が素晴らしかったんですが、その中でも自分の興味のある分野のものなど５つを選んで軽くまとめてみました。
+native macOS application、またはAppKitの世界 こちらの発表はmacOSアプリケーションについてでした。自分はSwiftを割と長い期間使ってますが、全くといっていいほどmacOSアプリケーションについては知識がなかったので以前から楽しみにしていました。最終的にアプリケーションデザインに関する自分が知らなかった事を色々しれてすごくよかったです。macOSが題材でしたが、iOSにも通じるものも多くありすごく勉強になりました。あとはスライドのデザインがとても綺麗でした。
+ARKitのアプリを作ろう こちらはARKitについてのとても実践的な発表でした。発表をされていたNamrataさんはARKitについての本も執筆されたそうです。自分は常にARKitで何かしたいと思っていたのでとても参考になりました。
+Swiftでソーシャルネットワークをつくろう こちらの発表はServer Side Swiftに関する発表でした。前半はSSSの現状に関する発表でした。様々な開発の状況や、SSSを利用してるプロダクトや企業の紹介などでした。後半はSSSを利用してSNSを作るというデモの発表でした。こちらは発表者の方が執筆されたServer Side Swiftについての本の中のデモでもあるそうです。
+賢者のString こちらはSwiftのStringに関する発表でした。Appleに勤めている方が発表されていた事もあっても注目度が高かったように思います。発表はString型の仕組みに関するもので正直ちゃんと理解できているわけではないのですが、プログラミング言語としてのSwiftをもっと深く学びたいと思わせてくれる発表だったと思います。また個人的にスピーカーの方と直接はなすことができたのが、なかなかできる事ではないと思うので、とてもよかったと思います。
+文字起こし 次へつなごう— Extending a hand to the next generation of Apple developers コーディングを学ぶには絶好のタイミング！技術は日進月歩、進化を遂げています。Apple Platformでの開発はSwiftやSwift playgroundにおける進歩によって、より簡単に取り組めるようになりました。しかし、この業界では、ソフトウェアエンジニアになろうとしている人と、エンジニアリングの役割を果たそうとしているテック企業の採用要求にはまだギャップが存在します。このトークでは、ソフトウェアエンジニアの人口統計からよく見落とされがちなポイントに焦点を当てます。これからソフトウェアエンジニアになろうとしている人々にどのように手を差し伸べられるのかを議論し、私たちソフトウェアエンジニアがApple開発者コミュニティをどのように成長させられるのかについてお話しします。ソフトウェアエンジニアではない人が壁を乗り越えることの難しさや、SwiftとこのApple開発者コミュニティが提供できるものとは何なのかについてもお話します。引用元
+こちらの発表はテック業界における様々なギャップについてでした。プログラミングを学ぶものとして、この発表を聞いていて、いろいろ思う事がありました。とりあえずこの業界がよりダイバーシティのあるものになると良いなと思います。
+文字起こし 感想 初めてのカンファレンス参加でしたがとてもいい経験になりました。機会があればまた参加したいです。東京以外でもやっているので、いつかは挑戦してみたいです。
+参考資料 try! Swift Tokyo 2019 資料まとめ " />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://ks1019.github.io/blog/2019/04/14/tryswift-tokyo%E3%81%AB%E5%AD%A6%E7%94%9F%E6%9E%A0%E3%81%A7%E5%8F%82%E5%8A%A0%E3%81%97%E3%81%9F%E8%A9%B1/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2019-04-14T00:00:00+00:00" />
+<meta property="article:modified_time" content="2022-11-27T06:03:37+00:00" />
+
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="try!Swift Tokyoに学生枠で参加した話"/>
+<meta name="twitter:description" content="何周遅れかわかりませんが自分の記録も兼ねて残して置こうと思います。
+今回、私はtry!Swift Tokyoに学生枠を利用して参加させてもらいました。$350の参加費が$50になるので、学生の自分にとってはかなり助かりました！
+公式Flickerも公開されたのでそれを見つつ、自分の記憶に残った発表をメモしていきたいと思います。
+全ての発表が発表が素晴らしかったんですが、その中でも自分の興味のある分野のものなど５つを選んで軽くまとめてみました。
+native macOS application、またはAppKitの世界 こちらの発表はmacOSアプリケーションについてでした。自分はSwiftを割と長い期間使ってますが、全くといっていいほどmacOSアプリケーションについては知識がなかったので以前から楽しみにしていました。最終的にアプリケーションデザインに関する自分が知らなかった事を色々しれてすごくよかったです。macOSが題材でしたが、iOSにも通じるものも多くありすごく勉強になりました。あとはスライドのデザインがとても綺麗でした。
+ARKitのアプリを作ろう こちらはARKitについてのとても実践的な発表でした。発表をされていたNamrataさんはARKitについての本も執筆されたそうです。自分は常にARKitで何かしたいと思っていたのでとても参考になりました。
+Swiftでソーシャルネットワークをつくろう こちらの発表はServer Side Swiftに関する発表でした。前半はSSSの現状に関する発表でした。様々な開発の状況や、SSSを利用してるプロダクトや企業の紹介などでした。後半はSSSを利用してSNSを作るというデモの発表でした。こちらは発表者の方が執筆されたServer Side Swiftについての本の中のデモでもあるそうです。
+賢者のString こちらはSwiftのStringに関する発表でした。Appleに勤めている方が発表されていた事もあっても注目度が高かったように思います。発表はString型の仕組みに関するもので正直ちゃんと理解できているわけではないのですが、プログラミング言語としてのSwiftをもっと深く学びたいと思わせてくれる発表だったと思います。また個人的にスピーカーの方と直接はなすことができたのが、なかなかできる事ではないと思うので、とてもよかったと思います。
+文字起こし 次へつなごう— Extending a hand to the next generation of Apple developers コーディングを学ぶには絶好のタイミング！技術は日進月歩、進化を遂げています。Apple Platformでの開発はSwiftやSwift playgroundにおける進歩によって、より簡単に取り組めるようになりました。しかし、この業界では、ソフトウェアエンジニアになろうとしている人と、エンジニアリングの役割を果たそうとしているテック企業の採用要求にはまだギャップが存在します。このトークでは、ソフトウェアエンジニアの人口統計からよく見落とされがちなポイントに焦点を当てます。これからソフトウェアエンジニアになろうとしている人々にどのように手を差し伸べられるのかを議論し、私たちソフトウェアエンジニアがApple開発者コミュニティをどのように成長させられるのかについてお話しします。ソフトウェアエンジニアではない人が壁を乗り越えることの難しさや、SwiftとこのApple開発者コミュニティが提供できるものとは何なのかについてもお話します。引用元
+こちらの発表はテック業界における様々なギャップについてでした。プログラミングを学ぶものとして、この発表を聞いていて、いろいろ思う事がありました。とりあえずこの業界がよりダイバーシティのあるものになると良いなと思います。
+文字起こし 感想 初めてのカンファレンス参加でしたがとてもいい経験になりました。機会があればまた参加したいです。東京以外でもやっているので、いつかは挑戦してみたいです。
+参考資料 try! Swift Tokyo 2019 資料まとめ "/>
+
+
+
+
+
+
+
+
+    
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-DNLGK3TWCX"></script>
+<script>
+var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+var doNotTrack = (dnt == "1" || dnt == "yes");
+if (!doNotTrack) {
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-DNLGK3TWCX', { 'anonymize_ip': true });
+}
+</script>
+
+
+
+
+
+    
+</head>
+<body>
+    <a class="skip-main" href="#main"></a>
+    <div class="container">
+        <header class="common-header"> 
+            
+                <div class="header-top">
+    <h1 class="site-title">
+    <a href="/blog">ストーのブログ</a>
+</h1>
+    <ul class="social-icons">
+
+
+    
+        
+        
+        <li>
+            <a href="https://github.com/ks1019" title="Github" rel="me">
+            <span class="inline-svg" >
+
+
+
+
+    
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path fill="currentColor" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+
+</span>
+
+            </a>
+        </li>
+    
+
+    
+        
+        
+        <li>
+            <a href="https://twitter.com/kotarong1" title="Twitter" rel="me">
+            <span class="inline-svg" >
+
+
+
+
+    
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg>
+
+</span>
+
+            </a>
+        </li>
+    
+
+    
+        
+        
+        <li>
+            <a href="https://www.linkedin.com/in/kotarosuto" title="Linkedin" rel="me">
+            <span class="inline-svg" >
+
+
+
+
+    
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>
+
+</span>
+
+            </a>
+        </li>
+    
+
+
+
+
+</ul>
+</div>
+
+    <nav></nav>
+
+
+
+
+
+
+            
+        </header>
+        <main id="main" tabindex="-1"> 
+            
+    
+
+    <article class="post h-entry">
+        <div class="post-header">
+            <header>
+                <h1 class="p-name post-title">try!Swift Tokyoに学生枠で参加した話</h1>
+
+                
+            </header>
+        </div>
+        <div class="content e-content">
+            <p>何周遅れかわかりませんが自分の記録も兼ねて残して置こうと思います。</p>
+<p>今回、私はtry!Swift Tokyoに<a href="https://tryswifttokyo.hatenablog.com/entry/2019/01/16/140000">学生枠</a>を利用して参加させてもらいました。$350の参加費が$50になるので、学生の自分にとってはかなり助かりました！</p>
+<p>公式<a href="https://www.flickr.com/photos/tryswift/albums/with/72157706267892171">Flicker</a>も公開されたのでそれを見つつ、自分の記憶に残った発表をメモしていきたいと思います。</p>
+<p><a href="https://www.flickr.com/photos/tryswift/40532416153/in/album-72157707880404674/" title="IMGP1296"><img src="https://live.staticflickr.com/7819/40532416153_10768930af.jpg" alt="IMGP1296"></a></p>
+<p>全ての発表が発表が素晴らしかったんですが、その中でも自分の興味のある分野のものなど５つを選んで軽くまとめてみました。</p>
+<h3 id="native-macos-applicationまたはappkitの世界" >native macOS application、またはAppKitの世界
+<span>
+    <a href="#native-macos-application%e3%81%be%e3%81%9f%e3%81%afappkit%e3%81%ae%e4%b8%96%e7%95%8c">
+        <svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/></svg>
+    </a>
+</span>
+</h3><script async class="speakerdeck-embed" data-id="2c739f32f87d49c6b11245397f14a3cf" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+<p>こちらの発表はmacOSアプリケーションについてでした。自分はSwiftを割と長い期間使ってますが、全くといっていいほどmacOSアプリケーションについては知識がなかったので以前から楽しみにしていました。最終的にアプリケーションデザインに関する自分が知らなかった事を色々しれてすごくよかったです。macOSが題材でしたが、iOSにも通じるものも多くありすごく勉強になりました。あとはスライドのデザインがとても綺麗でした。</p>
+<h3 id="arkitのアプリを作ろう" >ARKitのアプリを作ろう
+<span>
+    <a href="#arkit%e3%81%ae%e3%82%a2%e3%83%97%e3%83%aa%e3%82%92%e4%bd%9c%e3%82%8d%e3%81%86">
+        <svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/></svg>
+    </a>
+</span>
+</h3><script async class="speakerdeck-embed" data-id="2073441186dd478286e0aec386c1c10c" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+<p>こちらはARKitについてのとても実践的な発表でした。発表をされていた<a href="https://twitter.com/NamrataCodes">Namrata</a>さんはARKitについての本も執筆されたそうです。自分は常にARKitで何かしたいと思っていたのでとても参考になりました。</p>
+<h3 id="swiftでソーシャルネットワークをつくろう" >Swiftでソーシャルネットワークをつくろう
+<span>
+    <a href="#swift%e3%81%a7%e3%82%bd%e3%83%bc%e3%82%b7%e3%83%a3%e3%83%ab%e3%83%8d%e3%83%83%e3%83%88%e3%83%af%e3%83%bc%e3%82%af%e3%82%92%e3%81%a4%e3%81%8f%e3%82%8d%e3%81%86">
+        <svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/></svg>
+    </a>
+</span>
+</h3><script async class="speakerdeck-embed" data-id="85c56c8ff7ba427d9a206c61dd99b103" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+<p>こちらの発表はServer Side Swiftに関する発表でした。前半はSSSの現状に関する発表でした。様々な開発の状況や、SSSを利用してるプロダクトや企業の紹介などでした。後半はSSSを利用してSNSを作るというデモの発表でした。こちらは発表者の方が執筆されたServer Side Swiftについての本の中のデモでもあるそうです。</p>
+<h3 id="賢者のstring" >賢者のString
+<span>
+    <a href="#%e8%b3%a2%e8%80%85%e3%81%aestring">
+        <svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/></svg>
+    </a>
+</span>
+</h3><p>こちらはSwiftのStringに関する発表でした。Appleに勤めている方が発表されていた事もあっても注目度が高かったように思います。発表はString型の仕組みに関するもので正直ちゃんと理解できているわけではないのですが、プログラミング言語としてのSwiftをもっと深く学びたいと思わせてくれる発表だったと思います。また個人的にスピーカーの方と直接はなすことができたのが、なかなかできる事ではないと思うので、とてもよかったと思います。</p>
+<ul>
+<li><a href="http://niwatako.hatenablog.jp/entry/2019/03/22/160023">文字起こし</a></li>
+</ul>
+<h3 id="次へつなごう-extending-a-hand-to-the-next-generation-of-apple-developers" >次へつなごう— Extending a hand to the next generation of Apple developers
+<span>
+    <a href="#%e6%ac%a1%e3%81%b8%e3%81%a4%e3%81%aa%e3%81%94%e3%81%86-extending-a-hand-to-the-next-generation-of-apple-developers">
+        <svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/></svg>
+    </a>
+</span>
+</h3><blockquote>
+<p>コーディングを学ぶには絶好のタイミング！技術は日進月歩、進化を遂げています。Apple Platformでの開発はSwiftやSwift playgroundにおける進歩によって、より簡単に取り組めるようになりました。しかし、この業界では、ソフトウェアエンジニアになろうとしている人と、エンジニアリングの役割を果たそうとしているテック企業の採用要求にはまだギャップが存在します。このトークでは、ソフトウェアエンジニアの人口統計からよく見落とされがちなポイントに焦点を当てます。これからソフトウェアエンジニアになろうとしている人々にどのように手を差し伸べられるのかを議論し、私たちソフトウェアエンジニアがApple開発者コミュニティをどのように成長させられるのかについてお話しします。ソフトウェアエンジニアではない人が壁を乗り越えることの難しさや、SwiftとこのApple開発者コミュニティが提供できるものとは何なのかについてもお話します。<a href="https://www.tryswift.co/events/2019/tokyo/jp/#hand-to-the-next">引用元</a></p>
+</blockquote>
+<p>こちらの発表はテック業界における様々なギャップについてでした。プログラミングを学ぶものとして、この発表を聞いていて、いろいろ思う事がありました。とりあえずこの業界がよりダイバーシティのあるものになると良いなと思います。</p>
+<ul>
+<li><a href="http://niwatako.hatenablog.jp/entry/2019/03/22/175644">文字起こし</a></li>
+</ul>
+<h3 id="感想" >感想
+<span>
+    <a href="#%e6%84%9f%e6%83%b3">
+        <svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/></svg>
+    </a>
+</span>
+</h3><p>初めてのカンファレンス参加でしたがとてもいい経験になりました。機会があればまた参加したいです。東京以外でもやっているので、いつかは挑戦してみたいです。</p>
+<p><a href="https://www.flickr.com/photos/tryswift/47538392301/in/album-72157707871761074/" title="Untitled"><img src="https://live.staticflickr.com/7898/47538392301_4b58cbdfac.jpg" alt="Untitled"></a></p>
+<h3 id="参考資料" >参考資料
+<span>
+    <a href="#%e5%8f%82%e8%80%83%e8%b3%87%e6%96%99">
+        <svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/></svg>
+    </a>
+</span>
+</h3><ul>
+<li><a href="https://qiita.com/mishimay/items/32e59b589c49e21702b9">try! Swift Tokyo 2019 資料まとめ</a></li>
+</ul>
+
+        </div>
+        
+
+    
+
+
+<div class="post-info">
+    
+        <div class="post-date dt-published">2019-04-14</div>
+    
+
+    <a class="post-hidden-url u-url" href="https://ks1019.github.io/blog/2019/04/14/tryswift-tokyo%E3%81%AB%E5%AD%A6%E7%94%9F%E6%9E%A0%E3%81%A7%E5%8F%82%E5%8A%A0%E3%81%97%E3%81%9F%E8%A9%B1/">https://ks1019.github.io/blog/2019/04/14/tryswift-tokyo%E3%81%AB%E5%AD%A6%E7%94%9F%E6%9E%A0%E3%81%A7%E5%8F%82%E5%8A%A0%E3%81%97%E3%81%9F%E8%A9%B1/</a>
+    <a href="https://ks1019.github.io/blog" class="p-name p-author post-hidden-author h-card" rel="me"></a>
+
+
+    <div class="post-taxonomies">
+        
+            
+                <ul class="post-tags">
+                    
+                        
+                        <li><a href="https://ks1019.github.io/blog/tags/swift/">#swift</a></li>
+                    
+                </ul>
+        
+    </div>
+</div>
+
+    </article>
+
+    
+
+<h3>See Also</h3>
+<ul>
+  
+  <li><a href="/blog/2021/12/17/%E3%83%9F%E3%82%AF%E3%82%B7%E3%82%A3%E3%81%A7%E3%82%A4%E3%83%B3%E3%82%BF%E3%83%BC%E3%83%B3%E3%81%97%E3%81%9F%E8%A9%B1/">ミクシィでインターンした話</a></li>
+  
+</ul>
+
+
+    
+        
+    <div class="pagination post-pagination">
+        <div class="left pagination-item ">
+            
+                <a href="/blog/2019/12/25/%E6%95%B0%E5%AD%A6%E3%82%92%E5%A5%BD%E3%81%8D%E3%81%AB%E3%81%AA%E3%82%8B%E3%81%9F%E3%82%81%E3%81%AB%E8%AA%AD%E3%82%93%E3%81%A0%E6%9C%AC/">数学を好きになるために読んだ本</a>
+            
+        </div>
+        <div class="right pagination-item ">
+            
+                <a href="/blog/2018/12/11/%E3%83%96%E3%83%AD%E3%82%B0%E3%82%92%E5%A7%8B%E3%82%81%E3%81%BE%E3%81%97%E3%81%9F/">ブログを始めました。</a>
+            
+        </div>
+    </div>
+
+
+
+
+    
+
+    
+
+    
+
+    
+
+
+        </main>
+        
+            <footer class="common-footer">
+    
+    
+        <ul class="language-select">
+    
+    
+    
+        
+    
+
+    
+        
+            <li><a href="https://ks1019.github.io/blog/en/"></a></li>
+        
+    
+        
+            <li></li>
+        
+    
+</ul>
+
+    
+
+    <div class="common-footer-bottom">
+        
+        <div class="copyright">
+            <p>© 2022<br>
+             <a target="_blank" rel="noopener noreferrer" href="https://gohugo.io/">Hugo</a>,  <a target="_blank" rel="noopener noreferrer" href="https://github.com/mitrichius/hugo-theme-anubis">Anubis</a>.<br>
+            
+            </p>  
+        </div> 
+
+        
+
+    
+
+
+
+
+<script>
+const STORAGE_KEY = 'user-color-scheme'
+const defaultTheme = "auto-without-switcher"
+
+let currentTheme
+let switchButton
+let autoDefinedScheme = window.matchMedia('(prefers-color-scheme: dark)')
+
+const autoChangeScheme = e => {
+    currentTheme = e.matches ? 'dark' : 'light'
+    document.documentElement.setAttribute('data-theme', currentTheme)
+    changeButtonText()
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+    switchButton = document.querySelector('.theme-switcher')
+    currentTheme = detectCurrentScheme()
+    if (currentTheme == 'dark') {
+        document.documentElement.setAttribute('data-theme', 'dark')
+    }
+    if (currentTheme == 'auto') {
+        autoChangeScheme(autoDefinedScheme);
+        autoDefinedScheme.addListener(autoChangeScheme);
+    }
+
+    if (switchButton) {
+        changeButtonText()
+        switchButton.addEventListener('click', switchTheme, false)
+    }
+  
+    showContent()
+})
+
+function detectCurrentScheme() {
+    if (localStorage.getItem(STORAGE_KEY)) {
+        return localStorage.getItem(STORAGE_KEY)
+    } 
+    if (defaultTheme) {
+        return defaultTheme
+    } 
+    if (!window.matchMedia) {
+        return 'light'
+    } 
+    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        return 'dark'
+    }
+    return 'light'
+}
+
+function changeButtonText()
+{   
+    if (switchButton) {
+        switchButton.textContent = currentTheme == 'dark' ?  "" : ""
+    }
+}
+
+function switchTheme(e) {
+    if (currentTheme == 'dark') {
+        localStorage.setItem(STORAGE_KEY, 'light')
+        document.documentElement.setAttribute('data-theme', 'light')
+        currentTheme = 'light'
+    } else {
+        localStorage.setItem(STORAGE_KEY, 'dark')
+        document.documentElement.setAttribute('data-theme', 'dark')
+        currentTheme = 'dark'
+    }
+    changeButtonText()
+}
+
+function showContent() {
+    document.body.style.visibility = 'visible';
+    document.body.style.opacity = 1;
+}
+</script>   
+    </div>
+
+    <p class="h-card vcard">
+
+    <a href=https://ks1019.github.io/blog class="p-name u-url url fn" rel="me"></a> 
+
+    
+
+    
+</p> 
+</footer>
+
+        
+    </div>
+</body>
+</html>
