@@ -11,6 +11,7 @@ keywords:
   - ios
   - swift
   - MIXI
+slug: internship-at-mixi-in-2022
 ---
 
 昨年に続いて株式会社MIXIにて**Dive into MIXI GROUP**というインターンシップでMIXIグループの[minimo](https://minimodel.jp)事業部にてiOSエンジニアとしてインターンさせていただきました。
