@@ -25,7 +25,7 @@ disableSummary = true
 unsafe = true
 
 [permalinks]
-posts = "/:year/:month/:day/:title/"
+posts = "/:year/:month/:day/:slug/"
 
 [frontmatter]
   lastmod = ['lastmod', ':fileModTime', ':default']
