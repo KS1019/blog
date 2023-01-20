@@ -1,17 +1,16 @@
 ---
 title: MIXIでインターンした話 in 2022
 date: 2023-01-20T21:51:09.929Z
+slug: "internship-at-mixi-in-2022"
 tags:
   - MIXI
   - swift
   - internship
-draft: false
 keywords:
   - internship
   - ios
   - swift
   - MIXI
-slug: internship-at-mixi-in-2022
 ---
 
 昨年に続いて株式会社MIXIにて**Dive into MIXI GROUP**というインターンシップでMIXIグループの[minimo](https://minimodel.jp)事業部にてiOSエンジニアとしてインターンさせていただきました。
