@@ -13,7 +13,7 @@ keywords:
   - MIXI
 ---
 
-昨年に続いて株式会社MIXIにて**Dive into MIXI**というインターンシップでMIXIグループの[minimo](https://minimodel.jp)事業部にてiOSエンジニアとしてインターンさせていただきました。
+昨年に続いて株式会社MIXIにて**Dive into MIXI**というインターンシップでMIXIの[minimo](https://minimodel.jp)事業部にてiOSエンジニアとしてインターンさせていただきました。
 
 <a href="https://apps.apple.com/jp/app/minimo-%E3%83%9F%E3%83%8B%E3%83%A2-24%E6%99%82%E9%96%93%E4%BA%88%E7%B4%84%E5%8F%AF-%E7%BE%8E%E5%AE%B9%E3%82%B5%E3%83%AD%E3%83%B3%E4%BA%88%E7%B4%84%E3%82%A2%E3%83%97%E3%83%AA/id719858778?itscg=30200&amp;itsct=apps_box_appicon" style="width: 170px; height: 170px; border-radius: 22%; overflow: hidden; display: inline-block; vertical-align: middle;"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple123/v4/28/df/17/28df1703-b6bd-db1c-dd52-e7a747ae4213/AppIcon-1x_U007emarketing-0-7-0-85-220.png/540x540bb.jpg" alt="minimo（ミニモ）24時間予約可！美容サロン予約アプリ" style="width: 170px; height: 170px; border-radius: 22%; overflow: hidden; display: inline-block; vertical-align: middle;"></a>
 
