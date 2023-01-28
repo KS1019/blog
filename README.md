@@ -10,3 +10,6 @@ git submodule update --remote
 - Run hugo command to create a new post
 - Write a post
 - Commit & push the changes
+
+## Theme
+- [Anubis](https://github.com/Mitrichius/hugo-theme-anubis)
