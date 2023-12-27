@@ -54,12 +54,5 @@
       "path": "[[workspace]]/content/posts"
     }
   ],
-  "frontMatter.taxonomy.tags": [
-    "MIXI",
-    "hugo",
-    "internship",
-    "swift"
-  ],
-  "frontMatter.taxonomy.categories": [],
   "frontMatter.dashboard.openOnStart": true
 }
