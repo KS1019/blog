@@ -7,9 +7,9 @@ defaultContentLanguage = 'ja'
 
 [params]
 dateFormat = "2006-01-02"
-paginationSinglePost = false
+paginationSinglePost = true
 style = "auto-without-switcher"
-disableSummary = false
+disableSummary = true
 
 [[params.social]]
   id = "github"
