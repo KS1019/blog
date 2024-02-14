@@ -4,7 +4,7 @@ theme = 'anubis'
 enableRobotsTXT = true
 googleAnalytics = "G-DNLGK3TWCX"
 defaultContentLanguage = 'ja'
-pagination = 100
+paginate = 100
 
 [params]
 dateFormat = "2006-01-02"
