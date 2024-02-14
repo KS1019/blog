@@ -10,7 +10,7 @@ tags:
 # 解決策
 エイリアスのテンプレートに独自の変更を入れることでメタデータを伝播させることができました。
 
-```html {linenos=table}
+```html {linenos=inline}
 <!DOCTYPE html>
 <html>
 
