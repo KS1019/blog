@@ -13,9 +13,6 @@ keywords:
   - cat
   - swift
   - cli
-aliases: 
-    - /test-alias1
-    - /test-alias2
 ---
 
 ## catコマンド
