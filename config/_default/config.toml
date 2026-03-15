@@ -1,4 +1,4 @@
-languageCode = 'jp-ja'
+languageCode = 'ja'
 title = 'ストーのブログ'
 theme = 'PaperMod'
 enableRobotsTXT = true
@@ -6,7 +6,7 @@ defaultContentLanguage = 'ja'
 paginate = 100
 
 [params]
-dateFormat = "2006-01-02"
+DateFormat = "2006-01-02"
 defaultTheme = "auto"
 ShowReadingTime = true
 ShowShareButtons = false
