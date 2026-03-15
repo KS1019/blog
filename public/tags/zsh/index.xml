@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Zsh on ストーのブログ</title><link>https://ks1019.github.io/blog/tags/zsh/</link><description>ストーのブログ (Zsh)</description><generator>Hugo -- gohugo.io</generator><language>ja</language><lastBuildDate>Tue, 14 Dec 2021 19:03:50 -0800</lastBuildDate><atom:link href="https://ks1019.github.io/blog/tags/zsh/index.xml" rel="self" type="application/rss+xml"/><item><title>zinitを導入した</title><link>https://ks1019.github.io/blog/2021/12/14/zinit%E3%82%92%E5%B0%8E%E5%85%A5%E3%81%97%E3%81%9F/</link><pubDate>Tue, 14 Dec 2021 19:03:50 -0800</pubDate><guid>https://ks1019.github.io/blog/2021/12/14/zinit%E3%82%92%E5%B0%8E%E5%85%A5%E3%81%97%E3%81%9F/</guid><description>&lt;p&gt;macOSでのデフォルトのシェルがzshになって久しいですが、それに合わせて&lt;code&gt;.zshrc&lt;/code&gt;を適当運用してきたことのつけがzshの起動速度に影響してきたのでどうにかしようとした記録です。&lt;/p&gt;
+&lt;h1 id="zinitとは" &gt;zinitとは
+&lt;span&gt;
+&lt;a href="#zinit%e3%81%a8%e3%81%af"&gt;
+&lt;svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg"&gt;&lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/&gt;&lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/&gt;&lt;/svg&gt;
+&lt;/a&gt;
+&lt;/span&gt;
+&lt;/h1&gt;&lt;p&gt;zsh用のプラグインマネージャーであり、zshの高速化ができるらしいという話を聞いたので試してみることにしました。自分は主に&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://zenn.dev/xeres/articles/2021-05-05-understanding-zinit-syntax"&gt;https://zenn.dev/xeres/articles/2021-05-05-understanding-zinit-syntax&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://watiko.net/2021/12/05/renew-zshrc/"&gt;https://watiko.net/2021/12/05/renew-zshrc/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;の記事とGitHubの&lt;a href="https://github.com/zdharma-continuum/zinit/blob/main/README.md"&gt;README&lt;/a&gt;をみながら進めました。&lt;/p&gt;
+&lt;h1 id="計測" &gt;計測
+&lt;span&gt;
+&lt;a href="#%e8%a8%88%e6%b8%ac"&gt;
+&lt;svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg"&gt;&lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/&gt;&lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/&gt;&lt;/svg&gt;
+&lt;/a&gt;
+&lt;/span&gt;
+&lt;/h1&gt;&lt;p&gt;&lt;code&gt;hyperfine 'zsh -i -l -c exit'&lt;/code&gt;で計測してみたところ起動に約2秒かかっていることがわかりました。次に&lt;a href="https://watiko.net/2021/12/05/renew-zshrc/"&gt;この記事&lt;/a&gt;で紹介されている&lt;code&gt;zprof&lt;/code&gt;の機能を使って関数毎にかかっている時間を調べました。その結果、補完機能関連の部分に多く時間がかかっていることがわかりました。&lt;/p&gt;
+&lt;h1 id="zsh-userszsh-completionsのインストール方法の変更" &gt;zsh-users/zsh-completionsのインストール方法の変更
+&lt;span&gt;
+&lt;a href="#zsh-userszsh-completions%e3%81%ae%e3%82%a4%e3%83%b3%e3%82%b9%e3%83%88%e3%83%bc%e3%83%ab%e6%96%b9%e6%b3%95%e3%81%ae%e5%a4%89%e6%9b%b4"&gt;
+&lt;svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg"&gt;&lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/&gt;&lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/&gt;&lt;/svg&gt;
+&lt;/a&gt;
+&lt;/span&gt;
+&lt;/h1&gt;&lt;p&gt;まず自分はローカルにインストールされているcompletionのファイルをzinitが、見に行くように設定しましたが、それだと補完がうまく効くコマンドと効かないコマンドが出てきてしまいました。その原因は自分がzsh-completionのディレクトリに関係ないサードパーティの補完ファイルを入れていることでした。なのでそのサードパーティの補完ファイルを&lt;code&gt;site-functions/&lt;/code&gt;以下に移動させた後、Homebrew経由でインストールされていたzsh-users/zsh-completionsをzinit経由でのインストールに切り替え遅延ロードすることにより、起動時間の短縮を達成しました。&lt;/p&gt;
+&lt;h1 id="結果" &gt;結果
+&lt;span&gt;
+&lt;a href="#%e7%b5%90%e6%9e%9c"&gt;
+&lt;svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg"&gt;&lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/&gt;&lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/&gt;&lt;/svg&gt;
+&lt;/a&gt;
+&lt;/span&gt;
+&lt;/h1&gt;&lt;p&gt;&lt;code&gt;hyperfine 'zsh -i -l -c exit'&lt;/code&gt;でもう一度計測したところ、1秒を切るくらいの時間で起動できるようになっており、無事に高速化に成功したようです。&lt;/p&gt;
+&lt;h1 id="参考" &gt;参考
+&lt;span&gt;
+&lt;a href="#%e5%8f%82%e8%80%83"&gt;
+&lt;svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg"&gt;&lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/&gt;&lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/&gt;&lt;/svg&gt;
+&lt;/a&gt;
+&lt;/span&gt;
+&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://watiko.net/2021/12/05/renew-zshrc/"&gt;https://watiko.net/2021/12/05/renew-zshrc/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://unix.stackexchange.com/questions/26555/fpath-in-zsh-functions-and-site-functions"&gt;https://unix.stackexchange.com/questions/26555/fpath-in-zsh-functions-and-site-functions&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://zenn.dev/xeres/articles/2021-05-05-understanding-zinit-syntax"&gt;https://zenn.dev/xeres/articles/2021-05-05-understanding-zinit-syntax&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description></item></channel></rss>

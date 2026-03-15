@@ -27,7 +27,7 @@
         {{ partial "post-pagination.html" . }}
     {{ end }}
 
-    {{ if .Site.DisqusShortname }}
+    {{ if .Site.Config.Services.Disqus.Shortname }}
         {{ partial "disqus.html" . }}
     {{ end }}
 

@@ -2,7 +2,6 @@ languageCode = 'jp-ja'
 title = 'ストーのブログ'
 theme = 'anubis'
 enableRobotsTXT = true
-googleAnalytics = "G-DNLGK3TWCX"
 defaultContentLanguage = 'ja'
 paginate = 100
 
@@ -31,11 +30,15 @@ posts = "/:year/:month/:day/:slug/"
 [frontmatter]
   lastmod = ['lastmod', ':fileModTime', ':default']
 
+[services]
+  [services.googleAnalytics]
+    id = "G-DNLGK3TWCX"
+
 [privacy]
   [privacy.googleAnalytics]
     anonymizeIP = true
     respectDoNotTrack = true
-  [privacy.twitter]
+  [privacy.x]
     enableDNT = true
   [privacy.youtube]
     privacyEnhanced = true
