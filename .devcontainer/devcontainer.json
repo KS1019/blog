@@ -1,9 +1,9 @@
 {
 	"name": "Hugo",
-	"image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+	"image": "mcr.microsoft.com/devcontainers/base:ubuntu-24.04",
 	"features": {
 		"ghcr.io/devcontainers/features/hugo:1": {
-			"version": "latest",
+			"version": "0.157.0",
 			"extended": true
 		}
 	},
