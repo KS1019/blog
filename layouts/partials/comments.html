@@ -1,0 +1,11 @@
+{{- if .Site.Config.Services.Disqus.Shortname }}
+    {{ partial "disqus.html" . }}
+{{- end }}
+
+{{- if .Site.Params.UtterancesRepo }}
+    {{ partial "utterances.html" . }}
+{{- end }}
+
+{{- if .Site.Params.isso.enabled }}
+    {{ partial "isso.html" . }}
+{{- end }}
