@@ -1,25 +1,29 @@
-languageCode = 'jp-ja'
+languageCode = 'ja'
 title = 'ストーのブログ'
-theme = 'anubis'
+theme = 'PaperMod'
 enableRobotsTXT = true
 defaultContentLanguage = 'ja'
 paginate = 100
 
 [params]
-dateFormat = "2006-01-02"
-paginationSinglePost = true
-style = "auto-without-switcher"
-disableSummary = true
+DateFormat = "2006-01-02"
+defaultTheme = "auto"
+ShowReadingTime = true
+ShowShareButtons = false
+ShowPostNavLinks = true
+ShowBreadCrumbs = true
+ShowCodeCopyButtons = true
+ShowToc = true
 
-[[params.social]]
-  id = "github"
-  name = "ks1019"
-[[params.social]]
-  id = "twitter"
-  name = "kotarong1"
-[[params.social]]
-  id = "linkedin"
-  name = "kotarosuto"
+[[params.socialIcons]]
+  name = "github"
+  url = "https://github.com/ks1019"
+[[params.socialIcons]]
+  name = "twitter"
+  url = "https://twitter.com/kotarong1"
+[[params.socialIcons]]
+  name = "linkedin"
+  url = "https://linkedin.com/in/kotarosuto"
 
 [markup.goldmark.renderer]
 unsafe = true
