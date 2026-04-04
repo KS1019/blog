@@ -4,8 +4,13 @@ description: ""
 date: 2026-03-20T08:07:27.417Z
 preview: ""
 draft: true
-tags: []
-categories: []
+tags:
+    - swift
+    - vImage
+keywords:
+    - swift
+    - vImage
+    - precondition
 ---
 
 vImage.PixelBuffer.init(width:height:pixelFormat:)というイニシャライザーを使ってリサイズ後の画像データを収めるバッファー用の変数を用意しているコードがありました。
